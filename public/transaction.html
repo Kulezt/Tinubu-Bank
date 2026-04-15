@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transactions - Tinubu Bank</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>Tinubu Bank</h2>
+                <div class="menu-toggle" id="dash-mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="dashboard.html">Go to Dashboard</a></li>
+                <li><a href="transaction.html" class="active" id="nav-transactions">Transactions</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" id="logout-btn" class="logout-btn">Log Out</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header" style="margin-bottom: 20px;">
+                <div class="header-greeting">
+                    <h1>Transaction History</h1>
+                    <p>View all past activities for <span id="user-first-name">...</span></p>
+                </div>
+            </header>
+
+            <div class="card transactions-card">
+                <div class="table-responsive">
+                    <table class="transaction-table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th style="text-align: right;">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transaction-list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="bank.js"></script>
+    <script src="customer.js"></script>
+    <script src="transaction.js"></script>
+</body>
+
+</html>

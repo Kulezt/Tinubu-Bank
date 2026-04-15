@@ -1,0 +1,400 @@
+{
+  "tinubu_users": [
+    {
+      "id": "1",
+      "name": "Sarah Doe",
+      "email": "sarah@email.com",
+      "password": "password123",
+      "balance": 252300,
+      "accountNumber": "1234567890",
+      "transactions": [
+        {
+          "type": "Deposit",
+          "amount": 10000,
+          "date": "2026-04-03T21:48:38.140Z",
+          "status": "Completed",
+          "description": "Transfer from Philip Julius"
+        },
+        {
+          "type": "Deposit",
+          "amount": 1000,
+          "date": "2026-04-06T12:40:47.758Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Deposit",
+          "amount": 200000,
+          "date": "2026-04-06T13:03:18.988Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Deposit",
+          "amount": 10000,
+          "date": "2026-04-06T13:03:39.045Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Deposit",
+          "amount": 100,
+          "date": "2026-04-06T13:04:56.017Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Deposit",
+          "amount": 10000,
+          "date": "2026-04-06T13:21:51.936Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 100,
+          "date": "2026-04-06T13:26:30.586Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 500,
+          "date": "2026-04-06T13:32:34.700Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 10000,
+          "date": "2026-04-08T11:41:56.760Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 10000,
+          "date": "2026-04-10T21:49:23.568Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 100,
+          "date": "2026-04-10T23:17:29.554Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        }
+      ]
+    },
+    {
+      "balance": 1427000,
+      "transactions": [
+        {
+          "type": "Deposit",
+          "amount": 2000000,
+          "date": "2026-04-03T00:29:01.800Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 1000,
+          "date": "2026-04-06T12:40:47.642Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe"
+        },
+        {
+          "type": "Transfer",
+          "amount": 200000,
+          "date": "2026-04-06T13:03:18.930Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe"
+        },
+        {
+          "type": "Transfer",
+          "amount": 10000,
+          "date": "2026-04-06T13:03:38.984Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe"
+        },
+        {
+          "type": "Deposit",
+          "amount": 1000,
+          "date": "2026-04-06T13:04:23.687Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 100,
+          "date": "2026-04-06T13:04:55.937Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 10000,
+          "date": "2026-04-06T13:05:40.193Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 100000,
+          "date": "2026-04-06T13:06:12.571Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 1000,
+          "date": "2026-04-06T13:10:15.124Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 10000,
+          "date": "2026-04-06T13:21:51.853Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe",
+          "description": "Transfer to Sarah Doe"
+        },
+        {
+          "type": "Transfer",
+          "amount": 100,
+          "date": "2026-04-06T13:26:30.499Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe",
+          "description": "Transfer to Sarah Doe"
+        },
+        {
+          "type": "Transfer",
+          "amount": 500,
+          "date": "2026-04-06T13:32:34.628Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe",
+          "description": "Transfer to Sarah Doe"
+        },
+        {
+          "type": "Transfer",
+          "amount": 10000,
+          "date": "2026-04-08T11:41:56.664Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe",
+          "description": "Transfer to Sarah Doe"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 200000000000,
+          "date": "2026-04-08T11:43:07.330Z",
+          "status": "Failed - Insufficient Funds"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 100000,
+          "date": "2026-04-08T11:43:21.751Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 100000,
+          "date": "2026-04-08T12:39:12.391Z",
+          "status": "Completed",
+          "recipient": "Philip Julius",
+          "description": "Transfer to Philip Julius"
+        },
+        {
+          "type": "Deposit",
+          "amount": 100000000,
+          "date": "2026-04-08T12:39:38.861Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 100000000,
+          "date": "2026-04-08T12:40:06.370Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 10000,
+          "date": "2026-04-10T21:49:23.472Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe",
+          "description": "Transfer to Sarah Doe"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 10000,
+          "date": "2026-04-10T21:49:41.031Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 100,
+          "date": "2026-04-10T22:01:33.559Z",
+          "status": "Completed",
+          "recipient": "Philip Julius",
+          "description": "Transfer to Philip Julius"
+        },
+        {
+          "type": "Transfer",
+          "amount": 10000,
+          "date": "2026-04-10T22:25:14.124Z",
+          "status": "Completed",
+          "recipient": "Philip Julius",
+          "description": "Transfer to Philip Julius"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 100,
+          "date": "2026-04-10T22:26:07.521Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 100,
+          "date": "2026-04-10T23:17:29.528Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe",
+          "description": "Transfer to Sarah Doe"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 100000000000000,
+          "date": "2026-04-10T23:27:31.828Z",
+          "status": "Failed - Insufficient Funds"
+        },
+        {
+          "type": "Transfer",
+          "amount": 2000000000000,
+          "date": "2026-04-10T23:41:12.759Z",
+          "status": "Failed",
+          "description": "Transfer to Sarah Doe"
+        },
+        {
+          "type": "Withdrawal",
+          "amount": 20000000000000000,
+          "date": "2026-04-10T23:46:48.831Z",
+          "status": "Failed",
+          "description": "Insufficient Funds"
+        },
+        {
+          "type": "Transfer",
+          "amount": 1000,
+          "date": "2026-04-13T10:52:17.457Z",
+          "status": "Completed",
+          "description": "Transfer to Philip Julius"
+        }
+      ],
+      "name": "Saidu Lukman",
+      "email": "ayoluk22@gmail.com",
+      "password": "0987654321",
+      "isLoggedIn": false,
+      "accountNumber": "7300408219",
+      "id": "ijpMEuslsnQ",
+      "pin": "0712"
+    },
+    {
+      "balance": 1011100,
+      "transactions": [
+        {
+          "type": "Deposit",
+          "amount": 1000000,
+          "date": "2026-04-03T21:23:59.411Z",
+          "status": "Completed"
+        },
+        {
+          "type": "Transfer",
+          "amount": 100000,
+          "date": "2026-04-03T21:27:54.956Z",
+          "status": "Completed",
+          "recipient": "1234567890"
+        },
+        {
+          "type": "Transfer",
+          "amount": 10000,
+          "date": "2026-04-03T21:48:38.128Z",
+          "status": "Completed",
+          "recipient": "Sarah Doe"
+        },
+        {
+          "type": "Credit",
+          "amount": 100000,
+          "date": "2026-04-08T12:39:12.417Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 100,
+          "date": "2026-04-10T22:01:33.662Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 10000,
+          "date": "2026-04-10T22:25:14.147Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 1000,
+          "date": "2026-04-13T10:52:17.472Z",
+          "status": "Completed",
+          "description": "Transfer from Saidu Lukman"
+        },
+        {
+          "type": "Credit",
+          "amount": 10000,
+          "date": "2026-04-13T11:05:19.884Z",
+          "status": "Completed",
+          "description": "Transfer from Ayo OLA"
+        }
+      ],
+      "name": "Philip Julius",
+      "email": "pjulius8898@gmail.com",
+      "password": "#Kulezt2234",
+      "isLoggedIn": false,
+      "accountNumber": "6152165002",
+      "id": "2PS_qfcAHPw",
+      "pin": "1234"
+    },
+    {
+      "balance": 0,
+      "transactions": [],
+      "name": "Fatimah Ibrahim Abiola",
+      "email": "fatimah123@gmail.com",
+      "password": "12345678",
+      "isLoggedIn": false,
+      "accountNumber": "7588831951",
+      "id": "5NfNI4dxzrA"
+    },
+    {
+      "balance": 990000,
+      "transactions": [
+        {
+          "type": "Deposit",
+          "amount": 1000000,
+          "date": "2026-04-13T10:57:16.940Z",
+          "status": "Completed",
+          "description": "Self Service"
+        },
+        {
+          "type": "Transfer",
+          "amount": 10000,
+          "date": "2026-04-13T11:05:19.875Z",
+          "status": "Completed",
+          "description": "Transfer to Philip Julius"
+        }
+      ],
+      "name": "Ayo OLA",
+      "email": "ayoola123@gmail.com",
+      "password": "12345678",
+      "isLoggedIn": false,
+      "accountNumber": "5304108347",
+      "id": "pejdhtCdes4",
+      "pin": "1234"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

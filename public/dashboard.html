@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Tinubu Bank</title>
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+
+<body>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <h2>Tinubu Bank</h2>
+                <div class="menu-toggle" id="dash-mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="sidebar-nav">
+                <li><a href="#" class="active">Overview</a></li>
+                <li><a href="#" id="nav-transfer">Transfer</a></li>
+                <li><a href="#" id="nav-withdraw">Withdraw</a></li>
+                <li><a href="#" id="nav-deposit">Deposit</a></li>
+                <li><a href="transaction.html" id="nav-transactions">Transactions</a></li>
+            </ul>
+            <div class="sidebar-footer">
+                <a href="#" id="logout-btn" class="logout-btn">Log Out</a>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-greeting">
+                    <h1>Welcome back, <span id="user-first-name">...</span>!</h1>
+                    <p>Here is your financial summary for today.</p>
+                </div>
+            </header>
+
+            <div class="dashboard-grid">
+                <div class="card balance-card">
+                    <p>Account Number: <span id="user-account-number">...</span></p>
+                    <h3>Total Balance</h3>
+                    <h2 id="total-balance">0.00</h2>
+                    <p class="profit" id="balance-profit">Active Account</p>
+                </div>
+
+            </div>
+            <div class="card transactions-card">
+                <div class="card-header">
+                    <h3>Recent Transactions</h3>
+                    <a href="transaction.html" class="view-all-link">View All</a>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="transaction-table">
+                        <thead>
+                            <tr>
+                                <th>Description</th>
+                                <th>Category</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Status</th>
+                                <th style="text-align: right;">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody id="transaction-list">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <div id="action-modal" class="modal-overlay">
+        <div class="modal-box" id="action-modal-box">
+
+            <div id="modal-form-view">
+                <h3 id="action-modal-title"></h3>
+                <p id="action-modal-message"></p>
+                <input type="number" id="action-amount" placeholder="Enter amount..." class="modal-input">
+                <input type="text" class="modal-input" id="action-recipient" placeholder="Recipient Account Number..."
+                    style="display: none;" maxlength="10">
+                <input type="password" name="Pin" id="action-pin" placeholder="Enter PIN..." class="modal-input"
+                    maxlength="4">
+                <div class="modal-btn-group">
+                    <button id="cancel-action-btn" class="modal-btn cancel-btn">Cancel</button>
+                    <button id="confirm-action-btn" class="modal-btn confirm-btn">Proceed</button>
+                </div>
+            </div>
+
+           <div id="modal-confirm-view" style="display: none;">
+                <h3>Confirm Transfer</h3>
+                <p id="confirm-message" style="margin-bottom: 10px;"></p>
+                
+                <input type="password" id="transfer-confirm-pin" class="modal-input" placeholder="Enter 4-digit PIN" maxlength="4" style="margin-bottom: 20px;">
+                
+                <div class="modal-btn-group">
+                    <button id="cancel-confirm-btn" class="modal-btn cancel-btn">Go Back</button>
+                    <button id="final-confirm-btn" class="modal-btn confirm-btn">Send Money</button>
+                </div>
+            </div>
+
+            <div id="modal-setup-pin-view" style="display: none;">
+                <h3>Set Up Transaction PIN</h3>
+                <p style="margin: 15px 0; color: #64748b; font-size: 0.95rem;">You need a 4-digit security PIN before
+                    making transactions.</p>
+                <input type="password" id="new-pin" class="modal-input" placeholder="Create 4-digit PIN" maxlength="4"
+                    style="margin-bottom: 10px;">
+                <input type="password" id="confirm-new-pin" class="modal-input" placeholder="Confirm 4-digit PIN"
+                    maxlength="4">
+                <button id="save-pin-btn" class="modal-btn confirm-btn">Save & Continue</button>
+            </div>
+            
+            <div id="modal-feedback-view" style="display: none;">
+                <div id="feedback-icon" style="font-size: 3rem; margin-bottom: 15px;"></div>
+                <h3 id="feedback-title"></h3>
+                <p id="feedback-message" style="margin: 10px 0 25px; color: #64748b; font-size: 0.95rem;"></p>
+                <button id="feedback-close-btn" class="modal-btn confirm-btn">Got it</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="bank.js"></script>
+    <script src="customer.js"></script>
+    <script src="dashboard.js"></script>
+
+
+</body>
+
+</html>
