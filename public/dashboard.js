@@ -173,7 +173,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 }
 
                 try {
-                    const response = await fetch(`/api/server./tinubu_users`);
+                    const response = await fetch(`/api/server/tinubu_users`);
                     const allUsers = await response.json();
                     const recipientUser = allUsers.find(user => user.accountNumber === recipientAccNumber);
 
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                                 description: `Transfer from ${myAccount.name}`
                             });
 
-                            await fetch(`/api/server./tinubu_users/${recipientUser.id}`, {
+                            await fetch(`/api/server/tinubu_users/${recipientUser.id}`, {
                                 method: 'PATCH',
                                 headers: { 'Content-Type': 'application/json' },
                                 body: JSON.stringify({
@@ -269,7 +269,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             myAccount.pin = pin1;
 
             try {
-                await fetch(`/api/server./tinubu_users/${myAccount.id}`, {
+                await fetch(`/api/server/tinubu_users/${myAccount.id}`, {
                     method: 'PATCH',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ pin: myAccount.pin })
@@ -290,7 +290,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 async function syncDatabase(updatedAccount) {
     try {
-        await fetch(`/api/server./tinubu_users/${updatedAccount.id}`, {
+        await fetch(`/api/server/tinubu_users/${updatedAccount.id}`, {
             method: 'PATCH',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

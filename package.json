@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "json-server": "^1.0.0-beta.15"
+    "json-server": "0.17.4"
   },
   "name": "tinubu-bank",
   "version": "1.0.0",

@@ -1,15 +1,16 @@
 // api/server.js
 const jsonServer = require('json-server');
+const path = require('path');
+
 const server = jsonServer.create();
-const router = jsonServer.router('db.json'); // Points to your database
+// This exact line guarantees Vercel finds db.json in your main root folder
+const router = jsonServer.router(path.join(process.cwd(), 'db.json')); 
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);
-// Vercel makes the root folder read-only, so this rewrites the data in temporary memory
 server.use(jsonServer.rewriter({
     '/api/server/*': '/$1'
 }));
 server.use(router);
 
-// Export it so Vercel can run it as a serverless function
 module.exports = server;
