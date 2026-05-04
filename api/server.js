@@ -7,7 +7,7 @@ const middlewares = jsonServer.defaults();
 server.use(middlewares);
 // Vercel makes the root folder read-only, so this rewrites the data in temporary memory
 server.use(jsonServer.rewriter({
-    '/api/*': '/$1'
+    '/api/server/*': '/$1'
 }));
 server.use(router);
 

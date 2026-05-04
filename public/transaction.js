@@ -5,7 +5,7 @@ if (!activeEmail) {
 
 document.addEventListener('DOMContentLoaded', async () => {
     try {
-        const response = await fetch(`/api/tinubu_users?email=${activeEmail}`);
+        const response = await fetch(`/api/server/tinubu_users?email=${activeEmail}`);
         const users = await response.json();
 
         if (users.length === 0) {
