@@ -29,7 +29,7 @@ class LoginValidator {
             const email = this.email.value.trim();
             const password = this.password.value.trim();
 
-            fetch(`/api./tinubu_users?email=${email}`)
+            fetch(`/api/tinubu_users?email=${email}`)
                 .then(response => response.json())
                 .then(users => {
                     
