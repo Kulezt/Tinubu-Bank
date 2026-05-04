@@ -13,7 +13,7 @@ form.addEventListener('submit', async function(event) {
         const password = document.getElementById('password').value.trim();
         
         try {
-            const checkResponse = await fetch(`http://localhost:3000/tinubu_users?email=${email}`);
+            const checkResponse = await fetch(`/api./tinubu_users?email=${email}`);
             const existingUsers = await checkResponse.json();
             
             if (existingUsers.length > 0) {
@@ -23,7 +23,7 @@ form.addEventListener('submit', async function(event) {
 
             const newCustomer = new Customer(name, email, password, 0);
 
-            await fetch('http://localhost:3000/tinubu_users', {
+            await fetch('/api./tinubu_users', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(newCustomer)
